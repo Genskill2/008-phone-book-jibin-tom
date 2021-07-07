@@ -98,7 +98,7 @@ int main(int argc, char *argv[]) {
 FILE *open_db_file() {
   FILE *fp=fopen(DB, "r");
   if (fp == NULL) {
-    perror("Couldn't open database file: No such file or directory");
+    perror("Couldn't open database file");
     exit(1);
   }
   return fp;
