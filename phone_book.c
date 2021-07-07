@@ -201,7 +201,7 @@ void list(FILE *db_file) {
     p=p->next;
     n++;
   }
- // printf("Total entries :  %i",n);
+ printf("Total entries :  %i",n);
   /* TBD print total count */
   free_entries(base);
 }
@@ -234,7 +234,7 @@ int delete(FILE *db_file, char *name) {
   return deleted;
 }
 
-/*int search(FILE *db_file,char *ser){
+int search(FILE *db_file,char *ser){
 
 entry *p = load_entries(db_file);
   entry *base = p;
@@ -249,4 +249,4 @@ entry *p = load_entries(db_file);
     free_entries(base);
   return st;
   }
-*/
+
